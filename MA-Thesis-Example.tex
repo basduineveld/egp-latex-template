@@ -1,11 +1,50 @@
-\documentclass[10pt,a4paper,headsepline,footsepline,DIV13,BCOR12mm]{scrbook}
-\usepackage[english,ngerman]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
-\usepackage{scrpage2}
-\pagestyle{scrheadings}
+\documentclass[10pt,a4paper,parskip=half]{scrbook}
+
+% Type umlauts without \"
+\usepackage[utf8]{inputenc}
+
+% Use symmetrical margins instead of typical asymmetrical book layout
+\usepackage{a4wide}
+
+% Enable German hyphenation (new spelling)
+\usepackage[ngerman]{babel}
+
+% Define SE color
+\newcommand{\seblue}{\color[rgb]{0.0, 0.353, 0.671}}
+
+% Fonts
+\usepackage{roboto}
+\renewcommand{\rmdefault}{jkp}
+\setkomafont{chapter}{\normalfont\sffamily\Huge}
+\setkomafont{section}{\normalfont\sffamily\Large}
+\setkomafont{subsection}{\normalfont\sffamily\large}
+\setkomafont{subsubsection}{\normalfont\sffamily\fontsize{11}{15}\selectfont}
+
+% Remove spacing before chapter title
+\renewcommand{\chapterheadstartvskip}{}
+
+% Style "itemize", feel free to expand if you need more levels
+\usepackage{enumitem}
+\setlist{leftmargin=*}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\def\labelitemi{\seblue $\blacksquare$}
+\usepackage{wasysym}
+\def\labelitemii{\seblue \CIRCLE}
+\def\labelitemiii{\seblue $\blacktriangleright$}
+
 \usepackage{graphicx}
+
+\def\title{Eine elitewürdige Lösung für ein beliebiges Problem}
+\def\author{Max Mustermann}
+\def\studentno{1234567}
+\def\startdate{0.\ Datum 2015}
+\def\enddate{0.\ Datum 2015}
+\def\firstreviewer{Prof.\ Dr.\ Lorem Ipsum}
+\def\secondreviewer{Prof.\ Dr.\ Dolor Sit}
+\def\advisor{Amet Consectetur, MSc}
 
 \begin{document}
 \input{preface}
+\input{chapter1}
 \end{document}

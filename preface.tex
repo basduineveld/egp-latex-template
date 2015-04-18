@@ -1,9 +1,100 @@
-\selectlanguage{ngerman}
-\input{titlepage}
-\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Title Page
+\thispagestyle{empty}
 
-%select english as language!
-\selectlanguage{english}
+\begin{center}
+
+\includegraphics[width=9cm]{img/logos/se}
+
+\vspace{1cm}
+{\Large Masterarbeit im Elitestudiengang Software Engineering}
+
+\vspace{5cm}
+{\Huge\sffamily \title}
+
+\vspace{1cm}
+{\Large \author}
+
+\vspace{4.5cm}
+\includegraphics[width=2cm]{img/logos/lmu} \hspace{1cm}
+\includegraphics[width=2cm]{img/logos/augsburg} \hspace{1cm}
+\includegraphics[width=2cm]{img/logos/tum}
+
+\vspace{5mm}
+{\large
+{\bfseries Institut für Software \& Systems Engineering}\\
+Universitätsstraße 6a \hspace{0.25cm} D-86135 Augsburg}
+
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Advisor Page
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+
+\includegraphics[width=9cm]{img/logos/se}
+
+\vspace{3.7cm}
+{\Huge\sffamily \title}
+
+\vspace{1cm}
+{\Large \author}
+
+\vspace{1cm}
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+Matrikelnummer: & \studentno \\
+Beginn der Arbeit: & \startdate \\
+Abgabe der Arbeit: & \enddate \\
+Erstgutachter: & \firstreviewer \\
+Zweitgutachter: & \secondreviewer \\
+Betreuer: & \advisor \\
+\end{tabular}
+\end{table}
+
+\vspace{3.5cm}
+\includegraphics[width=2cm]{img/logos/lmu} \hspace{1cm}
+\includegraphics[width=2cm]{img/logos/augsburg} \hspace{1cm}
+\includegraphics[width=2cm]{img/logos/tum}
+
+\vspace{5mm}
+{\large
+{\bfseries Institut für Software \& Systems Engineering}\\
+Universitätsstraße 6a \hspace{0.25cm} D-86135 Augsburg}
+
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Statement Page
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+
+\chapter*{Erklärung}
+
+Hiermit versichere ich, dass ich diese Masterarbeit selbstständig verfasst habe.
+Ich habe dazu keine anderen als die angegebenen Quellen und Hilfsmittel verwendet.
+
+\vspace{2cm}
+Augsburg, den \today \hfill \author
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Table of Contents, List of Figures, List of Tables
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 
 \pagenumbering{roman}
 \tableofcontents
@@ -11,5 +102,4 @@
 \listoffigures
 \newpage
 \listoftables
-
 \pagenumbering{arabic}
