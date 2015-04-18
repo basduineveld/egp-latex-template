@@ -1,0 +1,50 @@
+\documentclass[10pt,a4paper,parskip=half]{scrbook}
+
+% Type umlauts without \"
+\usepackage[utf8]{inputenc}
+
+% Use symmetrical margins instead of typical asymmetrical book layout
+\usepackage{a4wide}
+
+% Enable English hyphenation
+\usepackage[english]{babel}
+
+% Define SE color
+\newcommand{\seblue}{\color[rgb]{0.0, 0.353, 0.671}}
+
+% Fonts
+\usepackage{roboto}
+\renewcommand{\rmdefault}{jkp}
+\setkomafont{chapter}{\normalfont\sffamily\Huge}
+\setkomafont{section}{\normalfont\sffamily\Large}
+\setkomafont{subsection}{\normalfont\sffamily\large}
+\setkomafont{subsubsection}{\normalfont\sffamily\fontsize{11}{15}\selectfont}
+
+% Remove spacing before chapter title
+\renewcommand{\chapterheadstartvskip}{}
+
+% Style "itemize", feel free to expand if you need more levels
+\usepackage{enumitem}
+\setlist{leftmargin=*}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\def\labelitemi{\seblue $\blacksquare$}
+\usepackage{wasysym}
+\def\labelitemii{\seblue \CIRCLE}
+\def\labelitemiii{\seblue $\blacktriangleright$}
+
+\usepackage{graphicx}
+
+\def\title{An Elite-Worthy Solution To An Arbitrary Problem}
+\def\author{John Doe}
+\def\studentno{1234567}
+\def\startdate{Date 0, 2015}
+\def\enddate{Date 0, 2015}
+\def\firstreviewer{Prof.\ Lorem Ipsum, PhD}
+\def\secondreviewer{Prof.\ Dolor Sit, PhD}
+\def\advisor{Amet Consectetur, MSc}
+
+\begin{document}
+\input{preface-en}
+\input{chapter1}
+\end{document}
