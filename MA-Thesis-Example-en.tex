@@ -12,17 +12,18 @@
 % Enable English hyphenation
 \usepackage[english]{babel}
 
-% Define SE color
-\newcommand{\seblue}{\color[rgb]{0.0, 0.353, 0.671}}
+% Define MW colors
+\newcommand{\mwgray}{\color[rgb]{0.349, 0.349, 0.349}}
+\newcommand{\mwgreen}{\color[rgb]{0.0, 0.526, 0.533}}
 
 % Fonts
 \usepackage{roboto}
 \renewcommand{\rmdefault}{jkp}
-\setkomafont{chapter}{\normalfont\sffamily\Huge}
-\setkomafont{section}{\normalfont\sffamily\Large}
-\setkomafont{subsection}{\normalfont\sffamily\large}
-\setkomafont{subsubsection}{\normalfont\sffamily\fontsize{11}{15}\selectfont}
-\setkomafont{pagehead}{\normalfont\seblue}
+\setkomafont{chapter}{\normalfont\sffamily\Huge\mwgray}
+\setkomafont{section}{\normalfont\sffamily\Large\mwgray}
+\setkomafont{subsection}{\normalfont\sffamily\large\mwgray}
+\setkomafont{subsubsection}{\normalfont\sffamily\fontsize{11}{15}\selectfont\mwgray}
+\setkomafont{pagehead}{\normalfont\mwgreen}
 
 % Remove spacing before chapter title
 \renewcommand{\chapterheadstartvskip}{}
@@ -32,10 +33,10 @@
 \setlist{leftmargin=*}
 \usepackage{xcolor}
 \usepackage{amssymb}
-\def\labelitemi{\seblue $\blacksquare$}
+\def\labelitemi{\mwgreen $\blacksquare$}
 \usepackage{wasysym}
-\def\labelitemii{\seblue \CIRCLE}
-\def\labelitemiii{\seblue $\blacktriangleright$}
+\def\labelitemii{\mwgreen \CIRCLE}
+\def\labelitemiii{\mwgreen $\blacktriangleright$}
 
 \usepackage{graphicx}
 \usepackage{url}
