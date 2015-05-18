@@ -34,6 +34,7 @@
 \def\labelitemiii{\seblue $\blacktriangleright$}
 
 \usepackage{graphicx}
+\usepackage{url}
 
 \def\title{Eine elitewürdige Lösung für ein beliebiges Problem}
 \def\author{Max Mustermann}
@@ -44,9 +45,13 @@
 \def\secondreviewer{Prof.\ Dr.\ Dolor Sit}
 \def\advisor{Amet Consectetur, MSc}
 
+\def\abstract{Lorem ipsum dolor sit amet.}
+
 \pdfinfo{/Author (\author) /Title (\title)}
 
 \begin{document}
 \input{preface}
 \input{chapter1}
+\bibliographystyle{ieeetran}
+\bibliography{bibl}
 \end{document}

@@ -34,6 +34,7 @@
 \def\labelitemiii{\seblue $\blacktriangleright$}
 
 \usepackage{graphicx}
+\usepackage{url}
 
 \def\title{An Elite-Worthy Solution To An Arbitrary Problem}
 \def\author{John Doe}
@@ -44,9 +45,13 @@
 \def\secondreviewer{Prof.\ Dolor Sit, PhD}
 \def\advisor{Amet Consectetur, MSc}
 
+\def\abstract{Lorem ipsum dolor sit amet.}
+
 \pdfinfo{/Author (\author) /Title (\title)}
 
 \begin{document}
 \input{preface-en}
 \input{chapter1}
+\bibliographystyle{ieeetran}
+\bibliography{bibliography}
 \end{document}
