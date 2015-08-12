@@ -1,5 +1,8 @@
 \documentclass[10pt,a4paper,parskip=half]{scrbook}
 
+% Output accented letters as one character instead of two
+\usepackage[T1]{fontenc}
+
 % Type umlauts without \"
 \usepackage[utf8]{inputenc}
 
@@ -36,8 +39,15 @@
 
 \usepackage{graphicx}
 \usepackage{url}
-\usepackage[final]{microtype}
+
+% Make URLs and references clickable (without highlighting them)
 \usepackage[hidelinks]{hyperref}
+
+% Allow umlauts in bibliography (without changing the citation style)
+\usepackage[numbers]{natbib}
+
+% Small typography tweaks, causes less line breaks in words
+\usepackage[final]{microtype}
 
 \def\title{Eine elitewürdige Lösung für ein beliebiges Problem}
 \def\author{Max Mustermann}
